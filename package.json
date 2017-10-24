@@ -1,0 +1,26 @@
+{
+  "name": "timeline",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZRUIK/timeline.git"
+  },
+  "author": "ZRUIK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZRUIK/timeline/issues"
+  },
+  "homepage": "https://github.com/ZRUIK/timeline#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "eslint": "^4.9.0",
+    "eslint-plugin-html": "^3.2.2",
+    "gulp": "^3.9.1"
+  }
+}
