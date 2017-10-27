@@ -18,10 +18,25 @@
                             
                 var options = {
                     width: '100%',
-                    height: '500px'
+                    height: '500px',
+                    tooltip: {
+                        followMouse: true,
+                        overflowMethod: 'cap'
+                    }
                 };
                             
                 var timeline = new vis.Timeline(container, items, options);
+
+                // var i;
+                // timeline.on('select', function (properties) {
+                //     var arrayStr = properties.items + '';
+                //     if (arrayStr && i != properties.items[0]) {
+                //         i = properties.items[0];
+                //         var vp = document.createElement('div');
+                //         vp.innerHTML = i;
+                //         document.body.appendChild(vp);
+                //     }
+                // });
             }
         }
     };
