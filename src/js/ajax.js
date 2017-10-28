@@ -1,3 +1,5 @@
+/* global ActiveXObject, vis */
+
 (function (){
     var xmlHttp = '';
     if (window.XMLHttpRequest) {
@@ -13,12 +15,20 @@
             var res = xmlHttp.responseText;
             if (res != null) {
                 var data = JSON.parse(res);
+                var groupCount = 4;
+              
+                // create a data set with groups
+                var names = ['语言', '浏览器', '库与框架', '事件'];
+                var groups = new vis.DataSet();
+                for (var g = groupCount - 1; g >= 0 ; g--) {
+                    groups.add({id: 'g' + g, content: names[g]});
+                }
                 
                 var items = new vis.DataSet(data);
                             
                 var options = {
                     width: '100%',
-                    height: '500px',
+                    height: '700px',
                     tooltip: {
                         followMouse: true,
                         overflowMethod: 'cap'
@@ -26,7 +36,7 @@
                 };
                             
                 var timeline = new vis.Timeline(container, items, options);
-
+                timeline.setGroups(groups);
                 // var i;
                 // timeline.on('select', function (properties) {
                 //     var arrayStr = properties.items + '';
