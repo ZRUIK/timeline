@@ -18,7 +18,7 @@
                 var groupCount = 4;
               
                 // create a data set with groups
-                var names = ['语言', '浏览器', '库与框架', '事件'];
+                var names = ['语言', '浏览器', '库与框架', '其他'];
                 var groups = new vis.DataSet();
                 for (var g = groupCount - 1; g >= 0 ; g--) {
                     groups.add({id: 'g' + g, content: names[g]});
@@ -28,7 +28,7 @@
                             
                 var options = {
                     width: '100%',
-                    height: '700px',
+                    height: '100%',
                     tooltip: {
                         followMouse: true,
                         overflowMethod: 'cap'
