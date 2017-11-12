@@ -15,10 +15,10 @@
             var res = xmlHttp.responseText;
             if (res != null) {
                 var data = JSON.parse(res);
-                var groupCount = 4;
+                var groupCount = 5;
               
                 // create a data set with groups
-                var names = ['语言', '浏览器', '库与框架', '其他'];
+                var names = ['语言', '浏览器', '库与框架', '工具', '概念'];
                 var groups = new vis.DataSet();
                 for (var g = groupCount - 1; g >= 0 ; g--) {
                     groups.add({id: 'g' + g, content: names[g]});
