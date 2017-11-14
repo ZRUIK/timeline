@@ -6,50 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>JavaScript Timeline</title>
     <link rel="stylesheet" href="../css/vis-timeline-graph2d.min.css">
-    <script src="../js/vis-timeline-graph2d.min.js"></script>
-    <style>
-        html, body, #app { 
-            height:99%;
-        }
-
-        .vis-item.vis-background.doldrums {
-            font-weight: bold;
-            background-color: rgba(119, 119, 119, 0.2);
-        }
-        .vis-item.red {
-            border-color: darkred;
-            color: white;
-            background-color: red;
-        }
-        .vis-item.vis-box.red {
-            font-size: 20pt;
-            font-weight: bold;
-        }
-        .vis-item.blue {
-            border-color: #4d90fe;
-            color: white;;
-            background-color: #36D0DF;
-        }
-        .vis-item.green {
-            background-color: greenyellow;
-            border-color: green;
-        }
-        .vis-item.orange {
-            border-color: red;
-            color: white;
-            background-color: #ff4500;
-        }
-
-        .vis-item.vis-selected {
-            border-color: #ffc200;
-            color: #1a1a1a;
-            background-color: #fff785;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <div id="loading">请稍候，正在加载...</div>
     <div id="app"></div>
+    <script src="../js/vis-timeline-graph2d.min.js"></script>
     <script src="../js/ajax.js"></script>
 </body>
 </html>

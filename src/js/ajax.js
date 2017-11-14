@@ -12,6 +12,7 @@
     xmlHttp.onreadystatechange = function() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             var container = document.getElementById('app');
+            var loading = document.getElementById('loading');
             var res = xmlHttp.responseText;
             if (res != null) {
                 var data = JSON.parse(res);
@@ -47,6 +48,8 @@
                 //         document.body.appendChild(vp);
                 //     }
                 // });
+
+                loading.style.display = 'none';
             }
         }
     };
