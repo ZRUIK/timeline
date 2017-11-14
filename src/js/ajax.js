@@ -18,7 +18,7 @@
                 var groupCount = 5;
               
                 // create a data set with groups
-                var names = ['语言', '浏览器', '库与框架', '工具', '概念'];
+                var names = ['语言', '浏览器', '库与框架', '工具', '其他'];
                 var groups = new vis.DataSet();
                 for (var g = groupCount - 1; g >= 0 ; g--) {
                     groups.add({id: 'g' + g, content: names[g]});
