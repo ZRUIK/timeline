@@ -27,9 +27,9 @@
     {"id": "22", "group": "g0", "content": "ECMAScript 3.0", "title": "第三版标准引入了强大的正则表达式，更佳的字符串处理，新的控制语句，try/catch 异常处理，更严密地错误定义，格式化的数字输出（奠定了 JavaScript 的基本语法）", "start": "1999-12", "className": "green"},
     {"id": "23", "group": "g0", "content": "ECMAScript 4.0 草案发布", "title": "草案发布，对 3.0 版做了大幅升级，预计次年 8 月发布正式版本", "start": "2007-10", "className": "green"},
     {"id": "24", "group": "g0", "content": "ECMAScript 4.0 被废除", "title": "由于 4.0 版的目标过于激进，各方对于是否通过这个标准，发生了严重分歧", "start": "2008-07", "className": "green"},
-    {"id": "25", "group": "g0", "content": "ECMAScript 5.0", "title": "增加了对自第三版发布以来浏览器已有的新功能的支持", "start": "2009-12", "className": "green"},
+    {"id": "25", "group": "g0", "content": "ECMAScript 5.0", "title": "增加了对自第三版发布以来浏览器已有的新功能的支持和严格模式", "start": "2009-12", "className": "green"},
     {"id": "26", "group": "g0", "content": "ECMAScript 5.1", "title": "与 ISO/IEC 16262:2011 完全一致，2012 年底所有主要浏览器都支持该版本", "start": "2011-06", "className": "green"},
-    {"id": "27", "group": "g0", "content": "ECMAScript 2015(ES6)", "title": "以后每年发布一个 ECMAScirpt 的版本", "start": "2015-06", "className": "green"},
+    {"id": "27", "group": "g0", "content": "ECMAScript 2015(ES6)", "title": "ES6 继承了大部分 ES4 的内容，并且从此以后每年发布一个 ECMAScirpt 的版本", "start": "2015-06", "className": "green"},
     {"id": "28", "group": "g0", "content": "ECMAScript 2016", "title": "增加了两个新特性：Array.prototype.include 和取幂运算符", "start": "2016-06", "className": "green"},
     {"id": "29", "group": "g0", "content": "ECMAScript 2017", "title": "增加了字符串填充、对象值遍历、对象的属性描述符获取、 函数参数列表与调用中的尾部逗号、异步函数、共享内存与原子操作等", "start": "2017-06", "className": "green"},
 
