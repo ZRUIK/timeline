@@ -1,8 +1,8 @@
 var http = require('http');
-var fs = require('fs');
-var url = require('url');
 var path = require('path');
-var mine = require('./src/js/mine').types;
+var url = require('url');
+var fs = require('fs');
+var mime = require('./src/js/mime').types;
 
 // 创建服务器
 http.createServer(function(request, response) {
@@ -24,7 +24,7 @@ http.createServer(function(request, response) {
         } else {
             // HTTP 状态码: 200 : OK
             // Content Type: text/plain
-            var contentType = mine[ext] || 'text/plain';
+            var contentType = mime[ext] || 'text/plain';
             response.writeHead(200, { 'Content-Type': contentType });
 
             // 响应文件内容
